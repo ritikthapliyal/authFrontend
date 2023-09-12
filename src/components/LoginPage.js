@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import google from './images/google.png'
-import github from './images/github.png'
+import google from '../images/google.png'
+import github from '../images/github.png'
+import '../Css.css'
 
 function LoginPage() {
 
