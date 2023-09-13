@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react';
 
 const messages = [
-    // "Hello there! I am Ritik Thapliyal",
-    // "Welcome to my portfolio website",
-    // "I am a passionate FullStack Developer",
-    // "I specialize in Backend Development",
-    // "Exploring new technologies is my forte",
-    // "I enjoy solving complex problems",
+    "Welcome to my portfolio website",
+    "I am a passionate FullStack Developer",
+    "I specialize in Backend Development",
+    "Exploring new technologies is my forte",
+    "I enjoy solving complex problems",
     "From databases to APIs, I handle all the technical complexities",
     "Discover my work and get to know me better with a quick login"
 ]
@@ -54,6 +53,7 @@ const  BriefAboutSite = () => {
 
     return (
         <div className="BriefAboutSite">
+            <h2>Hello there !<br></br>I am <span>Ritik Thapliyal</span></h2>
             <div className="text-animation">
                 <p>{currMessage}<span className="cursor">|</span></p>
             </div>
