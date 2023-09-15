@@ -27,6 +27,10 @@ function LoginPage() {
         console.log(dataObj)
     }
 
+    const handleGoogleLogin = async()=>{
+        window.location.href = 'http://localhost:5000/google'
+    }
+
     return (
         <div className='outer-container'>
 
@@ -39,7 +43,7 @@ function LoginPage() {
                     <div className='login-1'>
                         <span>Login using</span>
                         <div>
-                            <button><img src={google}></img></button>
+                            <button onClick={handleGoogleLogin}><img src={google}></img></button>
                             <button><img src={github}></img></button>
                             <button><img src={instagram}></img></button>
                             <button><img src={linkedin}></img></button>
@@ -112,7 +116,6 @@ function LoginPage() {
                                 </div>
 
                                 <div>
-                                    <Link>Forgot Password?</Link>
                                     <button onClick={registerUser}>register</button>
                                 </div>
 
