@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import google from '../images/google.png'
-import github from '../images/github.png'
-import linkedin from '../images/linkedin.png'
-import instagram from '../images/instagram.png'
-import '../Css.css'
 import { Link } from 'react-router-dom'
+import google from '../../images/google.png'
+import github from '../../images/github.png'
+import linkedin from '../../images/linkedin.png'
+import instagram from '../../images/instagram.png'
 
 function LoginPage() {
 
@@ -28,7 +27,7 @@ function LoginPage() {
     }
 
     const handleGoogleLogin = async()=>{
-        window.location.href = 'http://localhost:5000/google'
+        window.location.href = 'http://localhost:5000/auth/google'
     }
 
     return (

@@ -1,23 +1,10 @@
-
-
-/* ---------------------Header--------------- */
-.header{
-  width: 100vw;
-  height: 8vh;
-  padding: .2rem 1rem;
-}
-
-
-
-
-
-
 /* ------------------LoginPage--------------- */
 
 .AuthPages{
     width: 100%;
     height: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 .outer-container{
@@ -93,21 +80,34 @@
   color: lightgray;
 }
 
+
+.login-2{
+    width: fit-content;
+    padding: 1rem;
+}
 .login-2 form, .login-1{
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: .2rem;
 }
 
-.login-2 input{
+.login-2 input,.login-2 span {
   border: none;
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
   padding: .6rem .6rem;
   font-size: 14px;
   border-radius: 6px;
   outline: none;
-  cursor: pointer;
+  width: 100%;
+}
+.login-2 input{
+    cursor: pointer;
+}
+.login-2 span{
+    background-color: #2b355c;
+    color: white;
 }
 
 .login-2 div {
@@ -115,7 +115,7 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap: .6rem;
+    gap: .2rem;
 }
 
 .login-2 div button{
@@ -139,6 +139,7 @@
   align-self: baseline;
   text-decoration: none;
   font-size: 14px;
+  margin-bottom: .5rem;
 }
 
 
@@ -149,7 +150,7 @@
   align-self:last baseline;
   border: none;
   background-color: white;
-  color: darkblue;
+  color: #191939;
   cursor: pointer;
 
   justify-content: center;
@@ -174,7 +175,7 @@
   display: flex;
   flex-direction: column;
 }
-.register span,.login-page h1 span{
+.register span,.outer-container h1 span{
   color: #e4771d;
 }
 
@@ -215,24 +216,23 @@
     height: 30%;
     font-size: 2.4rem;
     width: 70%;
-    display: inline-block;
+    display: flex;
     color: #ffffff;
 }
 .text-animation p{
     height: 100%;
     width: 100%;
     display: inline-block;
-    line-height: 1;
-    line-break: strict;
+    line-height: 30px;
     font-size: 22px;
+    line-break: strict;
     font-family: 'Inconsolata', monospace;
 }
 
 .cursor {
-    font-size: 32px;
-    font-weight: 300;
+    font-size: 22px;
     margin-left: .1rem;
-    animation: cursor-blink 0.7s infinite;
+    animation: cursor-blink 0.6s infinite;
     color: #feac1f;
 }
 

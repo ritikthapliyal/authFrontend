@@ -1,7 +1,6 @@
 import React from 'react'
 import LoginPage from './LoginPage'
 import BriefAboutSite from './BriefAboutSite'
-import '../Css.css'
 
 function AuthPages() {
   return (

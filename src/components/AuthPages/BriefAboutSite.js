@@ -1,13 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 const messages = [
-    "Welcome to my portfolio website",
-    "I am a passionate FullStack Developer",
-    "I specialize in Backend Development",
-    "Exploring new technologies is my forte",
-    "I enjoy solving complex problems",
-    "From databases to APIs, I handle all the technical complexities",
-    "Discover my work and get to know me better with a quick login"
+    "Welcome to my portfolio website. I am a passionate FullStack Developer. I specialize in Backend Development. Exploring new technologies is my forte. I enjoy solving complex problems. From databases to APIs, I handle all the technical complexities. Discover my work and get to know me better with a quick login."
 ]
 
 
@@ -22,9 +16,17 @@ const  BriefAboutSite = () => {
         
         if(goFront){
             if(currMessage.length < messages[arrayIndex].length){
-                setTimeout(()=>{
-                    setCurrMessage(messages[arrayIndex].slice(0,currMessage.length+1))
-                },100)
+
+                if(currMessage.length > 0 && currMessage[currMessage.length - 1] === "."){
+                    setTimeout(()=>{
+                        setCurrMessage(messages[arrayIndex].slice(0,currMessage.length+1))
+                    },1000)
+                }
+                else{
+                    setTimeout(()=>{
+                        setCurrMessage(messages[arrayIndex].slice(0,currMessage.length+1))
+                    },80)
+                }
             }
             else{
                 //wait 1 seconds and then do the things
@@ -36,7 +38,7 @@ const  BriefAboutSite = () => {
             if(currMessage.length !== 0){
                 setTimeout(()=>{
                     setCurrMessage(currMessage.slice(0,-1))
-                },70)
+                },30)
             }
             else{
                 //wait 1 seconds and then do the things
