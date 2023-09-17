@@ -1,20 +1,32 @@
-import React from 'react'
-import Timeline from '../Timeline'
-
-const projects = [
-    { name: 'Project 1', position: 0 },
-    { name: 'Project 2', position: 500 },
-    { name: 'Project 3', position: 1000 },
-    // Add more projects and positions as needed
-  ]
-
+import React, { useEffect, useRef } from 'react'
+import './Css.css'
+import Projects from './Projects'
 
 function Dashboard() {
-  return (
-    <div>
-        <Timeline projects={projects} />
-    </div>
-  )
+
+    const outerDiv = useRef(null)
+    
+    // useEffect(()=>{
+    //     const container = outerDiv.current
+    //     console.log(container.clientHeight)
+    //     console.log(container.getBoundingClientRect())
+    //     // console.log(container.scrollTop)
+    // },[])
+
+    return (
+        // <div className='dashboard'>
+        <div>
+            <Projects></Projects>
+
+            {/* <div onScroll={()=>{
+                console.log(outerDiv.current.scrollTop)
+            }} ref={outerDiv} className='outer-div'>
+                <div className='inner-div one'></div>
+                <div className='inner-div two'></div>
+            </div> */}
+
+        </div>
+    )
 }
 
 export default Dashboard

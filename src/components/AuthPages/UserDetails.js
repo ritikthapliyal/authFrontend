@@ -50,7 +50,7 @@ export default function UserDetails() {
     return (
         <div className='AuthPages'>
             
-            <div className='outer-container'>
+            <div className='outer-container-2'>
             <h1 style={{"width":"40%"}}>The Last <span>Step</span></h1>               
             <div className='login-2'>
                 <form onSubmit={handleButtonClick}>

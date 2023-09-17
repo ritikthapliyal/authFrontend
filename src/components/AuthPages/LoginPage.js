@@ -33,8 +33,6 @@ function LoginPage() {
     return (
         <div className='outer-container'>
 
-            <div className='inner-container'>
-
                 <div className={`login-page ${isUp ? 'goingUp' : 'goingDown'}`}>
                     
                     <h1>Login to Your <span>Account</span></h1>
@@ -128,7 +126,6 @@ function LoginPage() {
                             </form>
                         </div>
                 </div>
-            </div>
 
         </div>
   )
