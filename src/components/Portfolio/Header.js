@@ -1,11 +1,15 @@
 import React from 'react'
 
 function Header() {
+
+
+    
+
     return (
         <div className='header-portfolio'>
-            <button>Thing1</button>
+            <button>About Me</button>
             <span className='vertical-line'>|</span>
-            <button>Thing2</button>
+            <button>Projects & <br></br>Work Experience</button>
             <span className='vertical-line'>|</span>
             <button>Thing3</button>
             <span className='vertical-line'>|</span>

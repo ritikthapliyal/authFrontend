@@ -7,31 +7,39 @@ function Profile() {
     
     return (
         <div className='Profile-portfolio'>
-            <div>
-                <h1>Hello there. My name  is Ritik</h1>
+            <div className='intro-portfolio'>
+                <h1>Hello there.<br></br>My name is Ritik</h1>
                 <button onClick={()=>setShowSocials(!showSocials)}> contact me</button>
             </div>
-            <Link 
-                to={''} 
-                className='instagram_circle' 
-                style={{animation: showSocials ? "come_in_front_i  0.6s forwards": "go_back_inplace_i 0.6s forwards"}}
-                >
-                <ion-icon name="logo-instagram" color="white"></ion-icon>
-            </Link>
-            <Link 
-                to={''} 
-                className='mail_square' 
-                style={{animation: showSocials ? "come_in_front_m  0.6s forwards": "go_back_inplace_m 0.6s forwards"}}>
-                    <ion-icon name="mail-outline"></ion-icon>
-            </Link>
-            <Link 
-                to={''} 
-                className='linkedin_square' 
-                style={{animation: showSocials ? "come_in_front_l  0.6s forwards": "go_back_inplace_l 0.6s forwards"}}
-                >
-                    <ion-icon name="logo-linkedin"></ion-icon>
-            </Link>
-            <div className='profile-img'>
+            <div className='profile-img-container'>
+                <div className='profile-img'></div>
+                <Link 
+                    to={''} 
+                    className='instagram_circle' 
+                    style={{animation: showSocials ? "come_in_front_i  0.6s forwards": "go_back_inplace_i 0.6s forwards"}}
+                    >
+                    <ion-icon name="logo-instagram" color="white"></ion-icon>
+                </Link>
+                <Link 
+                    to={''} 
+                    className='mail_square' 
+                    style={{animation: showSocials ? "come_in_front_m  0.6s forwards": "go_back_inplace_m 0.6s forwards"}}>
+                        <ion-icon name="mail-outline"></ion-icon>
+                </Link>
+                <Link 
+                    to={''} 
+                    className='linkedin_square' 
+                    style={{animation: showSocials ? "come_in_front_l  0.6s forwards": "go_back_inplace_l 0.6s forwards"}}
+                    >
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                </Link>
+                <Link 
+                    to={''} 
+                    className='github_square' 
+                    style={{animation: showSocials ? "come_in_front_g  0.6s forwards": "go_back_inplace_g 0.6s forwards"}}
+                    >
+                        <ion-icon name="logo-github"></ion-icon>
+                </Link>
             </div>
         </div>
     )

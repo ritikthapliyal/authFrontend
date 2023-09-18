@@ -24,15 +24,15 @@ const Projects = () => {
      
       const scrollToProject = (projectNumber) => {
         // Calculate the scroll position to bring the selected project into view
-        const projectHeight = containerRef.current.scrollHeight / 3; // Assuming 3 projects
-        const scrollPosition = (projectNumber - 1) * projectHeight;
+        const projectHeight = containerRef.current.scrollHeight / 3 // Assuming 3 projects
+        const scrollPosition = (projectNumber - 1) * projectHeight
     
         // Scroll the container to the calculated position
-        containerRef.current.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+        containerRef.current.scrollTo({ top: scrollPosition, behavior: 'smooth' })
     
         // Update the current project in state
-        setCurrentProject(projectNumber);
-      };
+        setCurrentProject(projectNumber)
+      }
     
       return (
         <div>

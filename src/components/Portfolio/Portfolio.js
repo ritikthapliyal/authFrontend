@@ -2,6 +2,7 @@ import React from 'react'
 import './Css.css'
 import Header from './Header'
 import Profile from './Profile'
+import Projects from './Projects'
 
 function Portfolio({setShowPortfolio}) {
 
@@ -15,6 +16,7 @@ function Portfolio({setShowPortfolio}) {
             </button>
             <Header></Header>
             <Profile></Profile>
+            {/* <Projects></Projects> */}
         </div>
     )
 }

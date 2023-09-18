@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './Css.css'
-import Projects from './Projects'
+import Projects from '../Portfolio/Projects'
 
 function Dashboard() {
 
@@ -16,7 +16,7 @@ function Dashboard() {
     return (
         // <div className='dashboard'>
         <div>
-            <Projects></Projects>
+            {/* <Projects></Projects> */}
 
             {/* <div onScroll={()=>{
                 console.log(outerDiv.current.scrollTop)
