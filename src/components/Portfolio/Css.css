@@ -19,8 +19,8 @@
     position: absolute;
     width: fit-content;
     padding: .2rem .4rem;
-    left: 4%;
-    top: 6%;
+    top: -24%;
+    left: 14%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,17 +48,6 @@
 
 
 /*------------------header-portfolio---------------------- */
-/* .header-portfolio{
-    display: flex;
-    width: 100vw;
-    height: 10rem;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2rem 4rem;
-    padding-left: 24%;
-    gap: .2rem;
-    margin-top: 3rem;
-} */
 .header-portfolio{
     display: flex;
     flex-direction: column;
@@ -99,20 +88,71 @@
     height: 100vh;
     display: flex;
     align-self: end;
-    justify-content: end;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
 }
 .intro-portfolio{
+    width: 28%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: left;
+    gap: 1rem;
 }
-
+.intro-portfolio div{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.intro-portfolio div span:first-child{
+    color: #ff6355;
+    font-size: 1.4rem;
+}
+.intro-portfolio div span:last-child{
+    color: #9e3dff;
+    font-size: 1.6rem;
+}
+.intro-portfolio p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+.intro-portfolio p span{
+    border: 2px solid #fb6635;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.intro-portfolio hr{
+    margin: 1rem 0rem;
+    width: 100%;
+    color: #004225;
+}
+.contact-me{
+    padding: 1rem;
+    border: none;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 1rem;
+    margin: 1rem 0rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.contact-me:hover{
+    background-color: black;
+}
+.updown{
+    animation: upDown 1.8s infinite;
+    width: 1rem;
+    height: fit-content;
+}
+.updown svg{
+    height: 2rem;
+}
 .profile-img-container{
     width: 26rem;
-    height: 30rem;
+    height: 66vh;
 }
 .profile-img {
     position: relative;
@@ -139,7 +179,7 @@
 }
 .instagram_circle{
     top: 10%;
-    right: 18%;
+    right: 12%;
     width: 8rem;
     height: 8rem;
     font-size: 2rem;
@@ -147,18 +187,18 @@
     background-color: #d76464;
 }
 .mail_square{
-    top: 8%;
-    right: 40%;
-    width: 8rem;
-    height: 8rem;
+    top: 67%;
+    right: 39%;
+    width: 8.5rem;
+    height: 8.5rem;
     font-size: 2.4rem;
-    border-radius: 6px;
+    border-radius: 30%;
     background-color: #f2ee76;
     color: #7a381a;
 }
 .linkedin_square{
-    top: 52%;
-    right: 44%;
+    top: 18%;
+    right: 42%;
     width: 10rem;
     height: 10rem;
     background-color: #8CABFF;
@@ -168,8 +208,8 @@
     border-radius: 30%;
 }
 .github_square{
-    top: 64%;
-    right: 12%;
+    top: 62%;
+    right: 6%;
     width: 10rem;
     height: 10rem;
     background-color: #A6FF96;
@@ -195,7 +235,7 @@
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #ccc;
-    }
+}
       
 .project h2 {
     margin: 0;
@@ -206,18 +246,16 @@
     25%{
         width: 7.4rem;
         height: 7.4rem;
-        right: 12%;
     }
     50% {
-        top: -32%;
         width: 6rem;
         height: 6rem;
-        right: 13%;
+        right: 0%;
     }
     100%{
         z-index: 11;
-        top: -4%;
-        right: 14%;
+        top: 18%;
+        right: 16%;
         width: 5rem;
         height: 5rem;
     }
@@ -225,82 +263,86 @@
 @keyframes go_back_inplace_i {
     0%{
         z-index: 11;
-        top: -4%;
-        right: 14%;
+        top: 18%;
+        right: 16%;
         width: 5rem;
         height: 5rem;
     }
     50%{
-        top: -36%;
+        width: 6rem;
+        height: 6rem;
+        right: 0%;
     }
 }
-
 
 
 @keyframes come_in_front_m {
     25%{
         width: 7.4rem;
         height: 7.4rem;
-        right: 40%;
+        top: 70%;
+        right: 47%;
     }
     50% {
         width: 6rem;
         height: 6rem;
-        right: 45%;
+        right: 52%;
+        top: 74%;
         z-index: 11;
     }
     100%{
         z-index: 11;
-        right: 36%;
         width: 5rem;
         height: 5rem;
+        top: 60%;
+        right: 46%;
     }
 }
 @keyframes go_back_inplace_m {
     0%{
         z-index: 11;
-        right: 36%;
         width: 5rem;
         height: 5rem;
+        top: 60%;
+        right: 46%;
     }
     50% {
         z-index: 11;
         width: 6rem;
         height: 6rem;
-        right: 45%;
+        right: 52%;
+        top: 74%;
     }
     100%{
         z-index: -1;
-        top: 2%;
-        right: 36%;
-        width: 8rem;
-        height: 8rem;
+        top: 67%;
+        right: 39%;
+        width: 8.5rem;
+        height: 8.5rem;
     }
 }
 
 
-
 @keyframes come_in_front_l {
     25%{
-        top: 55%;
-        right: 42%;
-        width: 9rem;
-        height: 9rem;
+        width: 8.5rem;
+        height: 8.5rem;
+        right: 46%;
     }
     50% {
-        width: 7rem;
-        height: 7rem;
-        right: 45%;
-        top: 60%;
+        width: 7.5rem;
+        height: 7.5rem;
+        top: 6%;
+        right: 48%;
         z-index: 11;
         transform: rotate(-10deg);
     }
     100%{
         z-index: 11;
-        right: 38%;
-        top: 60%;
-        width: 5rem;
-        height: 5rem;
+        top: 20%;
+        right: 42%;
+        width: 5.5rem;
+        height: 5.5rem;
         transform: rotate(0deg);
         font-size: 2.4rem;
     }
@@ -308,50 +350,49 @@
 @keyframes go_back_inplace_l{
     0%{
         z-index: 11;
-        right: 38%;
-        top: 60%;
-        width: 5rem;
-        height: 5rem;
+        top: 20%;
+        right: 42%;
+        width: 5.5rem;
+        height: 5.5rem;
         transform: rotate(0deg);
         font-size: 2.4rem;
     }
     50% {
+        width: 7.5rem;
+        height: 7.5rem;
+        top: 6%;
+        right: 48%;
         z-index: 11;
-        width: 6rem;
-        height: 6rem;
-        right: 45%;
-        top: 50%;
+        transform: rotate(-10deg);
     }
     100%{
         z-index: -1;
-        top: 55%;
-        right: 38%;
-        width: 8rem;
-        height: 8rem;
+        top: 18%;
+        right: 42%;
+        width: 10rem;
+        height: 10rem;
+        transform: rotate(-30deg);
     }
 }
-
 
 
 @keyframes come_in_front_g {
     25%{
         top: 65%;
-        right: 4%;
         width: 8.5rem;
         height: 8.5rem;
     }
     50% {
-        top: 58%;
-        right: 2%;
         width: 7.5rem;
         height: 7.5rem;
+        right: -3%;
         z-index: 11;
         transform: rotate(10deg);
     }
     100%{
         z-index: 11;
-        top: 50%;
-        right: 10%;
+        top: 48%;
+        right: 6%;
         width: 5.6rem;
         height: 5.6rem;
         transform: rotate(0deg);
@@ -361,26 +402,35 @@
 @keyframes go_back_inplace_g{
     0%{
         z-index: 11;
-        top: 50%;
-        right: 10%;
+        top: 48%;
+        right: 6%;
         width: 5.6rem;
         height: 5.6rem;
         transform: rotate(0deg);
         font-size: 2.4rem;
     }
     50% {
-        top: 58%;
-        right: 2%;
+        right: -3%;
+        top: 55%;
         width: 7.5rem;
         height: 7.5rem;
-        z-index: -1;
+        z-index: 11;
         transform: rotate(20deg);
     }
     100%{
         z-index: -1;
-        top: 70%;
-        right: 7%;
+        top: 62%;
+        right: 6%;
         width: 10rem;
         height: 10rem;
+    }
+}
+
+@keyframes upDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
     }
 }
