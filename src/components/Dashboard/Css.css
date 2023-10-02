@@ -1,1 +1,88 @@
+.dashboard{
+    width: 100vw;
+    height: 100vh;
+}
+.admin_dashboard{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.admin_dashboard button{
+    font-size: 1.2rem;
+    width: fit-content;
+    border: none;
+    padding: .6rem;
+    transition: all 0.4s;
+    background-color: white;
+    cursor: pointer;
+    color: #15142f;
+    transform:scaleX(96%);
+}
+.admin_dashboard button:hover{
+    border-color: #15142f;
+    transform:scaleX(100%);
+}
 
+
+
+
+
+/* --------------add_blog-------------*/
+.add_blog{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.add_blog_left{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color:azure;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+}
+
+.add_blog_right{
+    position: relative;
+    padding: 0rem 1rem;
+    width: 50%;
+    margin: 3rem;
+    height: fit-content;
+    min-height: 86%;
+    background-color: lightgray
+}
+.blog_inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+    gap: 1rem;
+}
+.tools{
+    position: fixed;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+    display: flex;
+    left: 36%;
+    gap: 1rem;
+}
+.blog{
+    margin: 2rem 0rem;
+}
+.blog_input{
+    width: 100%;
+    border: none;
+    min-height: 50px;
+    resize: none; 
+    overflow-y: hidden;
+    min-height: 50px;
+    padding: .4rem;
+    font-size: 1rem;
+    outline: none;
+}

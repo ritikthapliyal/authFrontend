@@ -1,8 +1,12 @@
-import './Css.css'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-function Dashboard({setShowAuthPages}) {
-    return (
-        <div className='dashboard'>
+function AdminDashboard({setShowAuthPages}) {
+    
+    const navigate = useNavigate()  
+    
+    return(
+        <div className='admin_dashboard'>
             {
                 <button className='go-to-portfolio' onClick={()=>{setShowAuthPages("0%")}}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -11,9 +15,12 @@ function Dashboard({setShowAuthPages}) {
                     Back To Portfolio 
                 </button>
             }
-            normal user view
+            <button onClick={()=>{navigate('add_blog')}}>Add Blog</button>
+            <button>Add Project</button>
+            <button>Add something</button>
+
         </div>
-    )
+    ) 
 }
 
-export default Dashboard
+export default AdminDashboard

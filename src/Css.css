@@ -11,6 +11,7 @@
     height: 100vh;
     display: flex;
     transition: all 0.3s;
+    transform: translateX(0%)
 }
 .AuthPages{
     width: 100vw;

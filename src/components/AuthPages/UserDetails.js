@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import BriefAboutSite from './BriefAboutSite'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 import { useGetCredentialsQuery, useSetCredentialsMutation } from '../../store/apis/authApis'
 
 export default function UserDetails() {

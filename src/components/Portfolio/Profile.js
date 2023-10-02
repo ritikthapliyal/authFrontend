@@ -27,7 +27,7 @@ function Profile({refVal}) {
                 <div className='profile-img'></div>
                 <Link 
                     to={''} 
-                    className='instagram_circle' 
+                    className='instagram_square' 
                     style={{animation: showSocials ? "come_in_front_i  0.6s forwards": "go_back_inplace_i 0.6s forwards"}}>
                     <ion-icon name="logo-instagram" color="white"></ion-icon>
                 </Link>
